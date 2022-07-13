@@ -1,0 +1,138 @@
+@main-color: #C75000;
+*{
+    padding:0;
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.container{
+    width:970px;
+    background-color: #403828;
+    padding: 0px 40px 10px 40px;
+}
+nav, h1, main{
+    margin: 0px 0 10px 0;
+}
+nav a, h1, div.marker, li.cell{
+    color: white;
+}
+h1, li, .browser-comparison{
+    text-align: center;
+}
+p{
+    font-size:16px;
+    margin: 10px 0;
+}
+.browser-name, li{
+    font-size: 14px;
+}
+nav div, nav div a, div.marker, section.browser-comparison ul, ul.browser-name li{
+    display: inline-block;
+}
+nav{
+    div{
+        width: 482px;
+        a{
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.15);
+            text-decoration: none;
+        }
+    }
+    .compare-about{
+        text-align: right;
+    }
+}
+h1{
+    font-weight:lighter;
+    background-color: @main-color;
+    padding: 15px 0;
+
+    span{
+        padding: 0 100px;
+        border-bottom: 2px solid white;
+    }
+}
+div.marker{
+    background-color: @main-color;
+    padding: 0 6px;
+    font-size: 18px;
+    position: relative;
+    left: -23px;
+    top: 35px;
+}
+main{
+    position: relative;
+    h2{
+        margin-bottom: 10px;
+        font-weight: normal;
+    }
+    section.ecmascript, .browser-comparison{
+    background-color:#F2E8D5;
+    }
+    .ecmascript, .keynotes{
+        padding: 5px 15px;
+    }
+    .keynotes{
+        background-color:#E0C89B;
+        span{
+            background-color: rgba(255, 255, 255, 0.5);
+            padding:0 3px;
+            font-size: small;
+        }
+        .secondary-note{
+            background-color: rgb(194, 194, 194);
+        }
+        .tertiary-note{
+            background-color: lightgrey;
+        }
+    }
+    .note, li.cell span{
+        background-color: white;
+    }
+    .note, .secondary-note, .tertiary-note, li.cell span{
+        padding:0 3px;
+        font-size:xx-small;
+        vertical-align: top;
+    }
+    .browser-comparison{
+        padding: 0px 0px 10px 0px;
+        ul{
+            list-style: none;
+            width: 80px;
+            vertical-align: top;
+            background-color: #EAE1CE;
+            li.browser-line{
+                border-bottom: 2px solid black;
+            }
+            li.cell{
+                height: 24px;
+                margin: 3px 0 5px 0;
+                position: relative;
+                padding: 2px 0;
+                span{
+                    color: black;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    border: 1px solid gray;
+                }
+            }
+            li.low{
+                background-color: #800000;
+            }
+            li.med{
+                background-color: #936F14;
+            }
+            li.high{
+                background-color: #2A8436;
+            }
+        }
+        ul.browser-name {
+            background-color: transparent;
+            width:925px;
+            li{
+                width: 80px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
